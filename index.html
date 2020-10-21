@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".toggle").click(function(){
+        $("#alttext").slideToggle();
+      });
+    })
+  </script>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class ="mobile-component">
+  <img id="mobile-woman" src="images/woman-mobile.svg"/>
+  <img id="shadow" src="images/bg-pattern-mobile.svg"/>
+  <div class ="content">
+    <h1 id="title">FAQ</h1>
+    <ul id="list">
+      <li>How many team members can ı invite<img id="down" src="images/icon-arrow-down.svg"/></li>
+      <li class="active">What is the maximum file upload size ?<img class="toggle" id="down" src="images/icon-arrow-down.svg"/><br>
+      <p id="alttext">No more than 2GB. All files in your account must fit your allotted storage space</p>
+      </li>
+      <li>How do ı reset my password ?<img id="down" src="images/icon-arrow-down.svg"/></li>
+      <li>Can ı cancel my subscription ?<img id="down" src="images/icon-arrow-down.svg"/></li>
+      <li>Do you provide additional support ?<img id="down" src="images/icon-arrow-down.svg"/></li>
+    </ul>
+  </div>
+</div>
+<br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yusuf Parmak</a>
+  </div>
+</body>
+</html>
